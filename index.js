@@ -5,3 +5,7 @@ require('dotenv').config();
 
 // Crear la aplicación de Express
 const app = express();
+// Configurar las rutas de tu proyecto
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname+'/index.html'));
+});
