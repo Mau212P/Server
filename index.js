@@ -12,3 +12,7 @@ app.get('/', (req, res) => {
 // Definir el puerto
 const PORT = process.env.PORT || 8000;
 
+// Configurar la escucha de las peticiones
+app.listen(PORT, () => {
+    console.log(Escuchando en el puerto ${PORT});
+});
