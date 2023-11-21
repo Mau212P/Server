@@ -9,3 +9,12 @@ const app = express();
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/index.html'));
 });
+// Definir el puerto
+const PORT = process.env.PORT || 8000;
+
+Erick:
+// Configurar la escucha de las peticiones
+app.listen(PORT, () => {
+    console.log(Escuchando en el puerto ${PORT});
+});
+DJ_CJ212
